@@ -5,11 +5,11 @@ spring:
     property-naming-strategy: SNAKE_CASE
   flyway:
     locations: classpath:/db/migration
-    schemas: employees
+    schemas: your_schema_name
     baselineOnMigrate: true
     enabled: true
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/learn_java?currentSchema=employees
-    username: runjava
-    password: rango123!
+    url: jdbc:postgresql://localhost:5432/your_db_name?currentSchema=your_schema_name
+    username: user
+    password: *****
